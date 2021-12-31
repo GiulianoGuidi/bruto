@@ -1,0 +1,141 @@
+
+ /*flexbox*/
+
+ /*vista desktop*/
+
+@media only screen and (min-width: 1024px){
+
+.flexi{
+	display: flex;
+	justify-content: center;
+}
+
+	/*mixin y extend*/
+
+@mixin estiloProductos($flex,$row,$space-around){
+	display: $flex;
+	flex-direction: $row;
+	justify-content: $space-around;
+}
+.productos1{
+	@include estiloProductos(flex,row,space-around)
+	
+}
+
+.productos2{
+ @extend .productos1;
+ 
+}
+
+.productos3{
+@extend .productos1;
+	
+}
+.contacto{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+
+}
+.formulario{
+	display: flex;
+	flex-direction: column;
+	padding-right: 50px;
+}
+
+.logo{
+	display: flex;
+	justify-content: center;
+
+	 .logopng{
+	width: 225px;
+	height: 225px;
+}
+
+ 
+}
+
+h3{
+	display: flex;
+	justify-content: center;
+	padding-top: 20px;
+	padding-bottom: 10px;
+}
+
+.box{
+	display: flex;
+	flex-direction: column;
+	align-items:center;
+}
+
+
+.rrss{
+	display: flex;
+	justify-content: center;
+	align-items:center;
+}
+
+}
+
+/*vista mobile*/
+
+@media only screen and(max-width: 768px){
+
+	.flexi{
+	display: flex;
+	justify-content: center;
+}
+
+	@mixin estiloProductos($flex,$column,$center){
+	display: $flex;
+	flex-direction: $column;
+	align-items: $center;
+}
+.productos1{
+	@include estiloProductos(flex,column,center)
+}
+.productos2{
+@include estiloProductos(flex,column,center)	
+
+}
+.productos3{
+@include estiloProductos(flex,column,center)
+}
+
+.logo{
+	display: flex;
+	justify-content: center;
+
+	 .logopng{
+	width: 200px;
+	height: 200px;
+}
+
+	
+}
+
+h3{
+	display: flex;
+	justify-content: center;
+	
+}
+
+.box{
+	display: flex;
+	flex-direction: column;
+	align-items:center;
+}
+
+
+.rrss{
+	display: flex;
+	justify-content: center;
+	align-items:center;
+
+}
+.padd{
+	padding-bottom: 30px;
+}
+
+}
+

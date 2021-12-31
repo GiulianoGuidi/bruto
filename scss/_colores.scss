@@ -1,0 +1,59 @@
+
+
+/*MAP-GET*/
+
+$paletaColores:(
+	naranja:orange,
+	negro:black,
+	gris:grey,
+	azul:blue,
+	blanco:white,
+	verde:green,
+	violeta:violet
+
+	);
+
+
+a{
+	font-family:'Roboto', sans-serif ;
+}
+
+
+.navbar-light .navbar-nav .nav-link{
+	color:map-get($paletaColores, negro) !important;
+}
+.bg-light{
+	background-color: map-get($paletaColores, naranja)!important;
+}
+
+.border{
+	border: 3px solid map-get($paletaColores, gris) !important;
+}
+
+main{
+	border: 3px solid map-get($paletaColores, gris);
+}
+
+h2{
+	color:map-get($paletaColores, blanco);
+	font-family: 'Roboto', sans-serif;
+}
+h3{
+	@extend h2
+}
+h4{
+	@extend h2
+}
+
+
+p{
+	color: map-get($paletaColores, blanco);
+}
+li{
+	color:map-get($paletaColores, blanco) ;
+}
+
+.log{
+	color: map-get($paletaColores, blanco)!important;
+}
+

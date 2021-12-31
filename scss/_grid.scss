@@ -1,0 +1,85 @@
+
+ /*grids*/
+ /*vista desktop*/
+
+ @media only screen and (min-width: 1024px){
+
+
+.imgp{
+	width: 30rem !important;
+	height: 30rem;
+}
+
+.gridContainerPadreProductos{
+	display: grid;
+	grid-template-areas: 
+	
+	"main main main"
+	;
+	grid-template-columns:40% 20% 40%;
+	grid-template-rows: auto;
+}
+main{
+	grid-area: main;
+	
+}
+
+
+.gridContainerPadreContacto{
+	display: grid;
+	grid-template-areas: 
+	
+	"main main main"
+	;
+	grid-template-rows: auto;
+	grid-template-columns: 40% 20% 40%;
+
+}
+main{
+	grid-area: main;
+	
+}
+
+
+
+}
+
+/*vista mobile*/
+
+ @media only screen and(max-width: 768px){
+
+ 	.imgp{
+	width: 20rem !important;
+	height: 15rem;
+}
+
+	.gridContainerPadreProductos{
+		display: grid;
+		grid-template-areas:
+		"main";
+		grid-template-rows:auto;
+		grid-template-columns:auto;
+	}
+
+main{
+	grid-area:main;
+		
+}
+
+
+
+.gridContainerPadreContacto{
+	grid-template-areas: main;
+	grid-template-rows: auto;
+	grid-template-columns: auto;
+
+}
+main{
+	grid-area: main;
+}
+.iframe{
+	width: 100%;
+}
+
+
+}
